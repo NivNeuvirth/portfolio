@@ -1,3 +1,321 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
+
+h1, h2, p, a, button, input {
+    font-family: inherit; /* Inherits the font from the body */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar styling */
+
+nav {
+    background-color: white;
+    position: fixed;
+    border-radius: 50px;
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 15px 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px; /* Spacing between links */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a.active {
+    background-color: whitesmoke;
+    border-radius: 20px; /* Rounded corners for better appearance */
+}
+
+
+/* header styling */
+
+header {
+    position: relative;
+    z-index: 1; /* Ensure the header is above the particles */
+    text-align: center;
+    padding: 100px 20px; /* Space around the content */
+    background-color: #4d809a; /* Background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    height: 150px;
+    border: white solid 3px;
+    border-radius: 50%; /* Circular image */
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: white;
+}
+
+header p {
+    font-size: 2em;
+    line-height: 1.5;
+    max-width: 900px;
+    color: white;
+    margin-top: 0px;
+    
+}
+
+/* Social Media Button Styling */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the buttons */
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-size: 1.5rem;
+    border: lightslategray solid 2px;
+}
+
+.social-button i {
+    margin-left: 10px; /* Space between the text and the icon */
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Particles.js container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure particles are behind the header content */
+    pointer-events: none;
+  }
+
+/* General */
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+     margin-bottom: 40px;
+    
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 50px 20px;
+}
+
+.project {
+    background-color: whitesmoke;
+    width:50%;
+    margin: 20px auto;
+    padding: 0 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 20px 0;    
+}
+
+.made-with-icons {
+    margin-bottom: 30px;
+}
+
+.iconify {
+    padding: 0 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+}
+
+.project p {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Social Media Button Styling */
+.project-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the buttons */
+    padding-bottom: 20px;
+}
+
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-button i {
+    margin-right: 10px; /* Space between the text and the icon */
+}
+
+.project-button:hover {
+    transform: scale(1.1); /* Increase size on hover */ 
+}
+
+
+/* Skills */
+
+#skills {
+    padding: 50px 20px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.skills-icons li {
+    display: flex;
+    flex-basis: calc(20% - 50px); /* Adjust the percentage and gap as needed */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;     
+}
+
+.icon-text {
+    margin-top: 10px;
+}
+
+/* Education */
+
+#education {
+    padding: 50px 20px 100px 20px;
+}
+
+.education-item {
+    background-color: whitesmoke;
+    width:50%;
+    margin: 0px auto;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.education-courses {
+    list-style-type: circle;
+}
+
+
+/* contact form styling */
+
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto 100px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    align-items: center;
+    width: 25%;
+    align-self: center;
+    transition: transform 0.3s ease;
+}
+
+#contact button i {
+    margin-left: 10px; /* Space between the text and the icon */
+}
+
+#contact button:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+
+

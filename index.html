@@ -5,83 +5,437 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Niv Neuvirth | Fullstack Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation -->
+
     <nav>
       <ul>
-        <li><a href="#header">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <!-- Header -->
-    <header id="header">
-      <img src="" alt="" />
+
+    <header id="home">
+      <div id="particles-js"></div>
+      <img src="images/profile1.jpg" alt="" />
       <h1>Niv Neuvirth</h1>
-      <h2>Fullstack Developer</h2>
-      <p>description</p>
-      <div>
-        <a href="https://github.com/NivNeuvirth" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/niv-neuvirth/" target="_blank"
-          >LinkedIn</a
-        >
+      <p>
+        Passionate <strong>Fullstack Developer</strong> and
+        <strong>Computer Science student</strong> with a talent for building
+        dynamic, user-friendly web applications.
+      </p>
+
+      <div class="social-media">
+        <a
+          class="social-button"
+          href="https://github.com/NivNeuvirth"
+          target="_blank"
+          >GitHub <i class="fab fa-github"></i>
+        </a>
+        <a
+          class="social-button"
+          href="https://www.linkedin.com/in/niv-neuvirth/"
+          target="_blank"
+          >LinkedIn <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </header>
+
     <!-- Projects -->
+
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
+
       <div class="project">
-        <h3>DBT Website</h3>
-        <p>Description</p>
-        <a href="https://dbt-your-insider.netlify.app/Discover" target="_blank"
-          >Live site</a
-        >
+        <h3>DBT - Tourist Attractions Full-Stack Web Application</h3>
+        <div class="made-with-icons">
+          <span
+            class="iconify"
+            data-icon="devicon:react-wordmark"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="devicon:javascript"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="devicon:materialui"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="devicon:postgresql-wordmark"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="logos:nodejs"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="devicon:express"
+            data-inline="false"
+            style="font-size: 48px"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="devicon:azure"
+            data-inline="false"
+            style="font-size: 40px"
+          ></span>
+        </div>
+        <img src="images/DBT.png" alt="" />
+        <p>
+          DBT is a full-stack web application that allows users to explore and
+          discover popular tourist attractions. Built using React for the
+          frontend and Node.js/Express for the backend, the application connects
+          to a PostgreSQL database hosted on Azure Cloud. The platform features
+          a responsive design with Material-UI, secure JWT-based authentication,
+          and a seamless user experience. It was deployed with Netlify for the
+          frontend and Render for the backend, ensuring fast and reliable access
+          to data for travelers.
+        </p>
+
+        <div class="project-media">
+          <a
+            class="project-button"
+            href="https://dbt-your-insider.netlify.app/"
+            target="_blank"
+            ><i class="fas fa-external-link-alt"></i> Live
+          </a>
+          <a class="project-button" href="" target="_blank"
+            ><i class="fab fa-github"></i> Code
+          </a>
+        </div>
       </div>
+
       <div class="project">
         <h3>Visual Programming of a Self-Checkout Machine</h3>
-        <p>Description</p>
-        <a href="" target="_blank">View Project</a>
+        <div class="made-with-icons">
+          <span
+            class="iconify"
+            data-icon="devicon:python-wordmark"
+            data-inline="false"
+            style="font-size: 60px"
+          ></span>
+          <img src="images/itemis-logo.png" alt="" style="width: 100px" />
+        </div>
+        <img src="images/GUI.png" alt="" />
+        <p>
+          This project focuses on representing the functionalities and
+          interactions of a self-checkout system through visual diagrams and
+          models. Additionally, a graphical user interface (GUI) has been
+          developed using Python, utilizing the generated code from the
+          Statecharts to create an interactive interface for users to simulate
+          the self-checkout process.
+        </p>
+        <div class="project-media">
+          <a
+            class="project-button"
+            href="https://www.youtube.com/watch?v=vWGB5EpwbE8"
+            target="_blank"
+            ><i class="fab fa-youtube"></i> Preview
+          </a>
+          <a
+            class="project-button"
+            href="https://github.com/NivNeuvirth/Visual_Programming_Final_Project"
+            target="_blank"
+            ><i class="fab fa-github"></i> Code
+          </a>
+        </div>
       </div>
     </section>
+
     <!-- Skills-->
+
     <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Express</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">Git/GitHub</div>
-      </div>
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-icons">
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:html"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">HTML</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:css"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">CSS</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:javascript"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">JavaScript</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:react-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">React</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:materialui-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Material UI</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:vscode-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">VS Code</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:azure-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Azure</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:expressjs-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Express</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:nodejs-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Node.js</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:postgresql-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">PostgreSQL</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:selenium"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Selenium</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:github-dark"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">GitHub</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:python-light"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">Python</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="skill-icons:cpp"
+            data-inline="false"
+            data-width="100px"
+            data-height="100px"
+          ></span
+          ><span class="icon-text">C++</span>
+        </li>
+      </ul>
     </section>
+
     <!-- Education -->
+
     <section id="education">
-      <h2>Education</h2>
+      <h2 class="section-title">Education</h2>
       <div class="education-item">
         <h3>Bachelor of Science in Computer Science</h3>
         <p>Holon Institute of Thecnology, 2022-2025</p>
+        <p>GPA: 88/100</p>
+        <ul class="education-courses">
+          <li>Algorithms and Data structures</li>
+          <li>Software Engineering</li>
+          <li>Operating Systems</li>
+          <li>Data Base Systems</li>
+        </ul>
       </div>
     </section>
+
     <!-- Contact -->
+
     <section id="contact">
-      <h2>Contact</h2>
-      <form action="back-end-url" method="POST">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        Please contact me through the form below or directly at
+        <a href="mailto:niv.neu@gmail.com">niv.neu@gmail.com</a>
+      </p>
+      <form action="https://formspree.io/f/mwpezapo" method="POST">
         <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
         </div>
         <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">
+          Submit<i class="fa-regular fa-paper-plane"></i>
+        </button>
       </form>
     </section>
+
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#fff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 4,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+    <script src="index.js"></script>
   </body>
 </html>
