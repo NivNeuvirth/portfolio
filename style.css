@@ -13,9 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/* navbar styling */
-
+/* Desktop navbar styling */
 nav {
     background-color: white;
     position: fixed;
@@ -27,6 +25,7 @@ nav {
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     display: inline-block;
+    width: fit-content;
 }
 
 nav ul {
@@ -53,27 +52,24 @@ nav a.active {
     border-radius: 20px; /* Rounded corners for better appearance */
 }
 
-
-/* header styling */
-
+/* Header styling */
 header {
     position: relative;
-    z-index: 1; /* Ensure the header is above the particles */
+    z-index: 1;
     text-align: center;
-    padding: 100px 20px; /* Space around the content */
-    background-color: #4d809a; /* Background color */
+    padding: 100px 20px;
+    background-color: #4d809a;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 header img {
     max-width: 200px;
     height: 150px;
     border: white solid 3px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
 }
 
 header h1 {
@@ -88,14 +84,13 @@ header p {
     max-width: 900px;
     color: white;
     margin-top: 0px;
-    
 }
 
 /* Social Media Button Styling */
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between the buttons */
+    gap: 15px;
 }
 
 .social-button {
@@ -104,7 +99,7 @@ header p {
     background-color: black;
     color: white;
     padding: 10px 20px;
-    border-radius: 25px; /* Rounded edges */
+    border-radius: 25px;
     text-decoration: none;
     transition: transform 0.3s ease;
     font-size: 1.5rem;
@@ -112,11 +107,11 @@ header p {
 }
 
 .social-button i {
-    margin-left: 10px; /* Space between the text and the icon */
+    margin-left: 10px;
 }
 
 .social-button:hover {
-    transform: scale(1.1); /* Increase size on hover */
+    transform: scale(1.1);
 }
 
 /* Particles.js container */
@@ -126,18 +121,16 @@ header p {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 0; /* Ensure particles are behind the header content */
+    z-index: 0;
     pointer-events: none;
-  }
+}
 
 /* General */
-
 .section-title {
     text-align: center;
     font-size: 2.5em;
     color: #333;
-     margin-bottom: 40px;
-    
+    margin-bottom: 40px;
 }
 
 /* Projects Section Styling */
@@ -147,7 +140,7 @@ header p {
 
 .project {
     background-color: whitesmoke;
-    width:50%;
+    width: 50%;
     margin: 20px auto;
     padding: 0 50px;
     border-radius: 10px;
@@ -158,7 +151,7 @@ header p {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
-    padding: 20px 0;    
+    padding: 20px 0;
 }
 
 .made-with-icons {
@@ -172,7 +165,7 @@ header p {
 .project img {
     width: 100%;
     height: auto;
-    border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+    border-radius: 10px 10px 0 0;
 }
 
 .project p {
@@ -185,7 +178,7 @@ header p {
 .project-media {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between the buttons */
+    gap: 15px;
     padding-bottom: 20px;
 }
 
@@ -195,22 +188,20 @@ header p {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    border-radius: 25px; /* Rounded edges */
+    border-radius: 25px;
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .project-button i {
-    margin-right: 10px; /* Space between the text and the icon */
+    margin-right: 10px;
 }
 
 .project-button:hover {
-    transform: scale(1.1); /* Increase size on hover */ 
+    transform: scale(1.1);
 }
 
-
 /* Skills */
-
 #skills {
     padding: 50px 20px;
 }
@@ -224,11 +215,11 @@ header p {
 
 .skills-icons li {
     display: flex;
-    flex-basis: calc(20% - 50px); /* Adjust the percentage and gap as needed */
+    flex-basis: calc(20% - 50px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;     
+    padding-bottom: 20px;
 }
 
 .icon-text {
@@ -236,14 +227,13 @@ header p {
 }
 
 /* Education */
-
 #education {
     padding: 50px 20px 100px 20px;
 }
 
 .education-item {
     background-color: whitesmoke;
-    width:50%;
+    width: 50%;
     margin: 0px auto;
     padding: 10px 50px;
     border-radius: 10px;
@@ -253,9 +243,7 @@ header p {
     list-style-type: circle;
 }
 
-
-/* contact form styling */
-
+/* Contact form styling */
 #contact p {
     text-align: center;
     margin-bottom: 20px;
@@ -281,7 +269,7 @@ form {
     margin-bottom: 15px;
 }
 
-input, textarea{
+input, textarea {
     width: 100%;
     max-width: 600px;
     padding: 10px;
@@ -310,12 +298,104 @@ textarea {
 }
 
 #contact button i {
-    margin-left: 10px; /* Space between the text and the icon */
+    margin-left: 10px;
 }
 
 #contact button:hover {
-    transform: scale(1.1); /* Increase size on hover */
+    transform: scale(1.1);
 }
 
+/* MEDIA QUERIES FOR RESPONSIVENESS */
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Mobile Navbar */
+    nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+    }
 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mobile Header */
+    header {
+        padding: 150px 10px;
+    }
+
+    header img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    /* Projects */
+    .project {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Skills */
+    .skills-icons li {
+        flex-basis: calc(50% - 20px);
+    }
+
+    /* Education */
+    .education-item {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Contact Form */
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #contact button {
+        width: 50%;
+    }
+
+    /* Social Media */
+    .social-media {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* Adjust text sizes */
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    p, a {
+        font-size: 1.2em;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+}
