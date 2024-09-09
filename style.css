@@ -330,9 +330,10 @@ textarea {
     }
 
     nav a {
-        padding: 10px 0;
+        padding: 10px 5px;
         width: 100%;
         text-align: center;
+        font-size: 0.8em; /* Adjust the font size */
     }
 
     /* Mobile Header */
